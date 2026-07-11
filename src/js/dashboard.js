@@ -1,6 +1,6 @@
 import { countrySelect, showToast } from "./main.js";
 
-const restCountriesAPIKkey = "rc_live_0809d41cd9fe4e8d87034b58fe8b4069";
+const restCountriesAPIKey = "rc_live_0809d41cd9fe4e8d87034b58fe8b4069";
 export const countrySelectTrigger = document.querySelector(
   ".custom-select-trigger",
 );
@@ -97,7 +97,7 @@ async function getCity(country) {
     displayCapital(capital);
   } catch (error) {
     globalCity.innerHTML = `<option value="" selected="">No Capitals found</option>`;
-    showToast("error", `Couldn't fetch the capital of ${country}, Please try again.`);
+    showToast("error", `Couldn't fetch the capital of ${country.slice(0,1).toUpperCase() + country.slice(1)}, Please try again.`);
   } finally {
     loadingCity.classList.add("hidden");
   }
@@ -162,7 +162,7 @@ async function getCountryInfo(country) {
       `https://api.restcountries.com/countries/v5?q=${country}`,
       {
         headers: {
-          Authorization: `Bearer ${restCountriesAPIKkey}`,
+          Authorization: `Bearer ${restCountriesAPIKey}`,
         },
       },
     );
