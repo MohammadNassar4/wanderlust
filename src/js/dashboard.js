@@ -97,7 +97,7 @@ async function getCity(country) {
     displayCapital(capital);
   } catch (error) {
     globalCity.innerHTML = `<option value="" selected="">No Capitals found</option>`;
-    showToast("error", `Couldn't fetch the city, Please try again.`);
+    showToast("error", `Couldn't fetch the capital of ${country}, Please try again.`);
   } finally {
     loadingCity.classList.add("hidden");
   }
