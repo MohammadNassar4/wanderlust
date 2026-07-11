@@ -188,12 +188,13 @@
 
 /* ==================== CURRENCY CONVERTER STYLES ==================== */
 .currency-converter-card {
-  background: white;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-lg);
-  padding: 32px;
-  max-width: 700px;
-  margin: 0 auto 24px;
+    background: white;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: 32px;
+    max-width: 100%;
+    margin: 0 auto 24px;
+    width: fit-content;
 }
 
 .currency-form {
@@ -241,7 +242,7 @@
 
 .currency-select-group {
   flex: 1;
-  max-width: 220px;
+  max-width: 50%;
 }
 
 .currency-select-group label {

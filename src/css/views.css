@@ -23,14 +23,14 @@
   right: -10%;
   width: 300px;
   height: 300px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 
 .view-header-icon {
   width: 64px;
   height: 64px;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: var(--border-radius-lg);
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@
 }
 
 .view-header-content p {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 14px;
 }
 
@@ -69,18 +69,18 @@
 }
 
 .view-header-form label {
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .view-header-form .form-select,
 .view-header-form .form-input {
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   border-color: transparent;
 }
 
 /* View Header Selection Badge (Global Country Display) */
 .view-header-selection {
-  display: none;
+  /* display: none; */
   align-items: center;
   gap: 16px;
   flex-shrink: 0;
@@ -91,10 +91,10 @@
   align-items: center;
   gap: 12px;
   padding: 10px 20px;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 50px;
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .selection-flag {
@@ -102,7 +102,7 @@
   height: 24px;
   object-fit: cover;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .current-selection-badge span {
@@ -133,18 +133,18 @@
   align-items: center;
   gap: 12px;
   padding: 12px 20px;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 12px;
-  border: 1px dashed rgba(255,255,255,0.4);
+  border: 1px dashed rgba(255, 255, 255, 0.4);
 }
 
 .no-selection-message i {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
 }
 
 .no-selection-message span {
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
 }
 
@@ -172,7 +172,7 @@
   right: -100px;
   width: 400px;
   height: 400px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 
@@ -183,7 +183,7 @@
   left: -50px;
   width: 300px;
   height: 300px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
 }
 
@@ -202,7 +202,7 @@
 }
 
 .search-hero-content p {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 16px;
 }
 
@@ -449,10 +449,25 @@
   text-transform: uppercase;
 }
 
-.badge-music { background: #dbeafe; color: #1d4ed8; }
-.badge-sports { background: #dcfce7; color: #15803d; }
-.badge-arts { background: #f3e8ff; color: #7c3aed; }
-.badge-other { background: var(--slate-100); color: var(--slate-600); }
+.badge-music {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge-sports {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.badge-arts {
+  background: #f3e8ff;
+  color: #7c3aed;
+}
+
+.badge-other {
+  background: var(--slate-100);
+  color: var(--slate-600);
+}
 
 /* ==================== HOLIDAYS CONTENT ==================== */
 .holidays-content {
@@ -540,8 +555,8 @@
 }
 
 .holiday-action-btn.saved {
-  background: var(--danger-100);
-  color: var(--danger-500);
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 74, 74);
 }
 
 .holiday-card h3 {
@@ -632,7 +647,7 @@
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   color: var(--purple-600);
   backdrop-filter: blur(4px);
 }
@@ -647,15 +662,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   color: var(--slate-400);
   transition: all var(--transition-fast);
   backdrop-filter: blur(4px);
 }
 
-.event-card-save:hover,
-.event-card-save.saved {
+.event-card-save:hover {
+  background: var(--danger-100);
   color: var(--danger-500);
+}
+
+.event-card-save.saved {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 74, 74);
 }
 
 .event-card-body {
